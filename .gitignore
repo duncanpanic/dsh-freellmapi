@@ -18,3 +18,6 @@ coverage/
 # The upstream artifact embeds OAuth client credentials, so GitHub secret
 # scanning rejects any push containing it. Drop your own copy in place locally.
 vendor/
+
+# Documentation folder — not pushed to remote (kept locally for reference)
+docs/
