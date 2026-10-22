@@ -1,0 +1,48 @@
+# dsh-freellmapi bundle patch.
+#
+# One row inserts the Host half, which registers the `freellmapi-native`
+# provider route: an in-process router over the provider keys you configure.
+# Nothing here needs FreeLLMAPI installed or running.
+#
+# Keys are added from the settings panel, not from this file — they are sealed
+# with AES-256-GCM under `~/.dsh/freellmapi/.master-key`, and a plaintext key
+# in a YAML patch would defeat that.
+- insert:
+    - id: freellmapi
+      name: dsh-freellmapi
+      config:
+        enabled: true
+        displayName: FreeLLMAPI
+        dataDir: ''
+        timeoutMs: 120000
+        # Empty-response recovery: when a model spends its whole output budget
+        # thinking and returns no text, ask once more for the answer.
+        recovery:
+          enabled: true
+          totalTimeoutMs: 1800000
+          maxOutputTokens: 8192
+        # Named fallback chains, selectable as `combo:<name>`.
+        #
+        #   strategy: fallback      always start at step 1 (predictable)
+        #             round-robin   rotate the start across steps, so a chain
+        #                           spreads load instead of draining the first
+        #                           member's free tier before touching the rest
+        #
+        # Rotation is per *step*, not per route: a step served by two platforms
+        # stays together. `auto` may be a step; it is always appended last.
+        chains: []
+        # chains:
+        #   - name: coding
+        #     steps: [qwen3-coder, nemotron-3-ultra, auto]
+        #     strategy: fallback
+        #   - name: spread
+        #     steps: [qwen3.5-9b, llama-3.3-70b]
+        #     strategy: round-robin
+        #     stickyRounds: 3
+        # Signed-in account channels, backed by vendor/channel-pack/. Set
+        # `enabled: false` to leave the pack dormant; the model router is
+        # unaffected either way. OpenCode stays off by default, matching the
+        # upstream pack's own choice.
+        channels:
+          enabled: true
+          enableOpencode: false

@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-10-22T07:32:59.922Z",
+  "description": "Free-tier providers the snapshot generator reads. Every endpoint is public: no credential is needed to list models.",
+  "providers": {
+    "nvidia": {
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "modelsUrl": "https://integrate.api.nvidia.com/v1/models",
+      "displayName": "NVIDIA NIM",
+      "quotaType": "credit",
+      "freeBasis": "credits",
+      "note": "注册赠送 credits，额度内全部模型可用；/models 不返回价格字段，因此整份列表都算免费",
+      "totalModels": 83
+    },
+    "openrouter": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "modelsUrl": "https://openrouter.ai/api/v1/models",
+      "displayName": "OpenRouter",
+      "quotaType": "per_model",
+      "freeBasis": "zero-price",
+      "note": "pricing.prompt 与 pricing.completion 均为 0 的 :free 模型",
+      "totalModels": 21
+    }
+  },
+  "summary": {
+    "totalProviders": 2,
+    "totalModels": 104,
+    "freeModels": 104
+  }
+}

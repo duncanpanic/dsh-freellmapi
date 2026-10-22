@@ -1,0 +1,60 @@
+{
+  "name": "dsh-freellmapi",
+  "version": "0.4.0",
+  "description": "In-process free-tier model router for DeepSeek Harness: quota-aware routing, automatic failover, region probing and reasoning-effort translation over a 297-model / 32-platform catalog. No external gateway.",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "freellmapi",
+    "llm-provider",
+    "openai-compatible",
+    "failover",
+    "free-tier",
+    "router"
+  ],
+  "license": "MIT",
+  "author": "duncanpanic",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duncanpanic/dsh-freellmapi.git"
+  },
+  "homepage": "https://github.com/duncanpanic/dsh-freellmapi#readme",
+  "bugs": {
+    "url": "https://github.com/duncanpanic/dsh-freellmapi/issues"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "src",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run-all.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  }
+}

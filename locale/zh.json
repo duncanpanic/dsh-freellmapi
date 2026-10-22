@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "FreeLLMAPI 模型池",
+    "description": "在 DSH 进程内直接调度各家的免费模型：按配额选路、自动故障转移、地区可用性探测与思考强度翻译。不需要运行任何外部网关。"
+  },
+  "config": {
+    "enabled": "是否启用（false = 完全不注册 provider）",
+    "displayName": "模型选择器中显示的名称",
+    "dataDir": "密钥、用量与退役记录的存放目录，留空为 ~/.dsh/freellmapi",
+    "timeoutMs": "单次上游请求超时（毫秒）",
+    "recovery": "空响应恢复：模型把输出额度全花在思考上时追问一次（enabled / totalTimeoutMs / maxOutputTokens）"
+  }
+}

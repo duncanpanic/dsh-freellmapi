@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "FreeLLMAPI model pool",
+    "description": "Drives free-tier models from many providers inside the DSH process: quota-aware routing, automatic failover, region probing and reasoning-effort translation — with no external gateway to run."
+  },
+  "config": {
+    "enabled": "Whether to enable the plugin (false registers no provider route)",
+    "displayName": "Name shown in the model picker",
+    "dataDir": "Directory for sealed keys, usage and retirement records; empty means ~/.dsh/freellmapi",
+    "timeoutMs": "Per-request upstream timeout in milliseconds",
+    "recovery": "Empty-answer recovery: ask once more when a model spends its whole output budget thinking (enabled / totalTimeoutMs / maxOutputTokens)"
+  }
+}

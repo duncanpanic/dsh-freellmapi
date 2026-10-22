@@ -1,0 +1,20 @@
+node_modules/
+.snapshots/
+.env
+.env.local
+*.log
+.DS_Store
+dist/
+coverage/
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+
+# Optional third-party account-channel pack — NOT redistributed.
+# The upstream artifact embeds OAuth client credentials, so GitHub secret
+# scanning rejects any push containing it. Drop your own copy in place locally.
+vendor/

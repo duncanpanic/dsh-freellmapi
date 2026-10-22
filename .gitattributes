@@ -1,0 +1,12 @@
+# Everything is normalized to LF so a Windows, macOS and Linux clone agree.
+# This rule comes first because the last matching rule wins, and the exceptions
+# below override it.
+* text=auto eol=lf
+
+# Keep vendored build artifacts byte-identical.
+#
+# `vendor/channel-pack/NOTICE.md` publishes a checksum for `pack.js`, and the
+# WASM module is loaded by path: a line-ending conversion would change the bytes
+# on checkout and make the documented md5 look like tampering.
+vendor/channel-pack/pack.js  -text
+vendor/channel-pack/*.wasm   binary

@@ -1,0 +1,7551 @@
+{
+ "source": "freellmapi catalog (models table) + provider registrations",
+ "license": "MIT (tashfeenahmed/freellmapi)",
+ "platforms": {
+  "airforce": {
+   "baseURL": "https://api.airforce/v1"
+  },
+  "apinex": {
+   "baseURL": "https://api.apinex.bond/v1"
+  },
+  "blaze": {
+   "baseURL": "https://api.blazeapi.org/paid/v1"
+  },
+  "blockrun": {
+   "baseURL": "https://api.blockrun.ai/v1"
+  },
+  "clod": {
+   "baseURL": "https://api.clod.io/v1"
+  },
+  "cohere": {
+   "baseURL": "https://api.cohere.ai/compatibility/v1"
+  },
+  "dreamprompting": {
+   "baseURL": "https://dreamprompting.com/api/v1"
+  },
+  "electronhub": {
+   "baseURL": "https://api.electronhub.ai/v1"
+  },
+  "experiential": {
+   "baseURL": "https://api.experientiallabs.ai/v1"
+  },
+  "gizmo": {
+   "baseURL": "https://api.gizmoplatforms.com/api/v1"
+  },
+  "google": {
+   "baseURL": "https://generativelanguage.googleapis.com/v1beta"
+  },
+  "groq": {
+   "baseURL": "https://api.groq.com/openai/v1"
+  },
+  "cerebras": {
+   "baseURL": "https://api.cerebras.ai/v1"
+  },
+  "bai": {
+   "baseURL": "https://api.b.ai/v1"
+  },
+  "anyapi": {
+   "baseURL": "https://api.anyapi.ai/v1"
+  },
+  "radeon": {
+   "baseURL": "https://developer.amd.com.cn/radeon/api/v1"
+  },
+  "nvidia": {
+   "baseURL": "https://integrate.api.nvidia.com/v1"
+  },
+  "mistral": {
+   "baseURL": "https://api.mistral.ai/v1"
+  },
+  "openrouter": {
+   "baseURL": "https://openrouter.ai/api/v1"
+  },
+  "huggingface": {
+   "baseURL": "https://router.huggingface.co/v1"
+  },
+  "ollama": {
+   "baseURL": "https://ollama.com/v1"
+  },
+  "kilo": {
+   "baseURL": "https://api.kilo.ai/api/gateway/v1"
+  },
+  "llm7": {
+   "baseURL": "https://api.llm7.io/v1"
+  },
+  "opencode": {
+   "baseURL": "https://opencode.ai/zen/v1"
+  },
+  "ovh": {
+   "baseURL": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1"
+  },
+  "agnes": {
+   "baseURL": "https://apihub.agnes-ai.com/v1"
+  },
+  "reka": {
+   "baseURL": "https://api.reka.ai/v1"
+  },
+  "siliconflow": {
+   "baseURL": "https://api.siliconflow.com/v1"
+  },
+  "routeway": {
+   "baseURL": "https://api.routeway.ai/v1"
+  },
+  "bazaarlink": {
+   "baseURL": "https://bazaarlink.ai/api/v1"
+  },
+  "ainative": {
+   "baseURL": "https://api.ainative.studio/api/v1"
+  },
+  "aion": {
+   "baseURL": "https://api.aionlabs.ai/v1"
+  },
+  "requesty": {
+   "baseURL": "https://router.requesty.ai/v1"
+  },
+  "navy": {
+   "baseURL": "https://api.navy/v1"
+  },
+  "nara": {
+   "baseURL": "https://router.bynara.id/v1"
+  },
+  "sealion": {
+   "baseURL": "https://api.sea-lion.ai/v1"
+  },
+  "orcarouter": {
+   "baseURL": "https://api.orcarouter.ai/v1"
+  },
+  "unorouter": {
+   "baseURL": "https://api.unorouter.com/v1"
+  },
+  "xkiro": {
+   "baseURL": "https://api.xkiro.com/v1"
+  },
+  "qianfan": {
+   "baseURL": "https://qianfan.baidubce.com/v2"
+  },
+  "volcengine": {
+   "baseURL": "https://ark.cn-beijing.volces.com/api/v3"
+  },
+  "longcat": {
+   "baseURL": "https://api.longcat.chat/openai/v1"
+  },
+  "xfyun": {
+   "baseURL": "https://spark-api-open.xf-yun.com/v1"
+  },
+  "inferbase": {
+   "baseURL": "https://api.inferbase.ai/v1"
+  },
+  "llmtr": {
+   "baseURL": "https://llmtr.com/v1"
+  },
+  "logfare": {
+   "baseURL": "https://logfare.ai/v1"
+  },
+  "lucidity": {
+   "baseURL": "https://composite.lucidity.sh/v1"
+  },
+  "modelscope": {
+   "baseURL": "https://api-inference.modelscope.cn/v1"
+  },
+  "onomeo": {
+   "baseURL": "https://onomeo.com/v1"
+  },
+  "plugsky": {
+   "baseURL": "https://plugsky.com/v1"
+  },
+  "pollinations": {
+   "baseURL": "https://gen.pollinations.ai/v1"
+  },
+  "router9": {
+   "baseURL": "https://api.router9.com/v1"
+  },
+  "septor": {
+   "baseURL": "https://api.septorlabs.com/v1"
+  },
+  "simplellm": {
+   "baseURL": "https://api.simplellm.eu/v1"
+  },
+  "speka": {
+   "baseURL": "https://speka.me/v1"
+  },
+  "typhoon": {
+   "baseURL": "https://api.opentyphoon.ai/v1"
+  },
+  "waterfall": {
+   "baseURL": "https://api.getwaterfall.org/v1"
+  },
+  "zhipu": {
+   "baseURL": "https://open.bigmodel.cn/api/paas/v4"
+  },
+  "aclide": {
+   "baseURL": "https://aclide.com/v1"
+  },
+  "aihorde": {
+   "baseURL": "https://oai.aihorde.net/v1"
+  }
+ },
+ "unresolvedPlatforms": [
+  "cloudflare"
+ ],
+ "models": [
+  {
+   "platform": "aclide",
+   "id": "z-ai/glm-4.5-airx",
+   "name": "GLM-4.5 AirX (ACLIDE)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "€20/month shared internal usage credits · no card",
+   "tools": true,
+   "vision": false,
+   "intelligence": 85,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aclide",
+   "id": "z-ai/glm-4.7-flashx",
+   "name": "GLM-4.7 FlashX (ACLIDE)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "€20/month shared internal usage credits · no card",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aclide",
+   "id": "z-ai/glm-5-turbo",
+   "name": "GLM-5 Turbo (ACLIDE)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "€20/month shared internal usage credits · no card",
+   "tools": true,
+   "vision": false,
+   "intelligence": 54,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aclide",
+   "id": "z-ai/glm-5v-turbo",
+   "name": "GLM-5V Turbo (ACLIDE)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "€20/month shared internal usage credits · no card",
+   "tools": true,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "agnes",
+   "id": "agnes-2.0-flash",
+   "name": "Agnes 2.0 Flash",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · promo $0/token",
+   "tools": true,
+   "vision": true,
+   "intelligence": 79,
+   "speed": 6,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "agnes",
+   "id": "agnes-2.5-flash",
+   "name": "Agnes 2.5 Flash",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · promo $0/token",
+   "tools": true,
+   "vision": true,
+   "intelligence": 63,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "agnes",
+   "id": "agnes-2.5-pro",
+   "name": "Agnes 2.5 Pro (Agnes AI)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · promo $0/token",
+   "tools": false,
+   "vision": false,
+   "intelligence": 37,
+   "speed": 10,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "agnes",
+   "id": "agnes-2.5-pro-alpha",
+   "name": "Agnes 2.5 Pro Alpha (Agnes AI)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · promo $0/token",
+   "tools": false,
+   "vision": false,
+   "intelligence": 53,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "agnes",
+   "id": "agnes-3.0-flash",
+   "name": "Agnes 3.0 Flash (Agnes AI)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · promo $0/token",
+   "tools": false,
+   "vision": false,
+   "intelligence": 35,
+   "speed": 10,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "aphrodite/SicariusSicariiStuff/Impish_Bloodmoon_12B",
+   "name": "Impish Bloodmoon 12B (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "aphrodite/SicariusSicariiStuff/Impish_LLAMA_4B",
+   "name": "Impish LLAMA 4B (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "aphrodite/TheDrummer/Behemoth-X-123B-v2.1",
+   "name": "Behemoth-X-123B-v2 1 (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "aphrodite/TheDrummer/Cydonia-24B-v4.3",
+   "name": "Cydonia 24B v4.3 (AI Horde)",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 205,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "aphrodite/TheDrummer/Skyfall-31B-v4.2",
+   "name": "Skyfall 31B v4.2 (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Angelic_Eclipse-12B",
+   "name": "Angelic Eclipse 12B (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Cydonia-24B-v4.3",
+   "name": "Cydonia 24B v4.3 (AI Horde koboldcpp)",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 205,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive",
+   "name": "Gemma 4 E4B Uncensored Aggressive (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4_K_M",
+   "name": "Gemma-4-E4B-Uncensored-HauhauCS-Aggressive-Q4 K M (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Gemma-4-E4B-it-Ultra-Uncensored-Heretic",
+   "name": "Gemma 4 E4B Ultra Uncensored (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/L3-8B-Stheno-v3.2",
+   "name": "Llama 3 Stheno 8B v3.2 (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/L3-8B-Stheno-v3.2-Q5_K_M",
+   "name": "L3-8B-Stheno-v3 2-Q5 K M (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/L3-Super-Nova-RP-8B",
+   "name": "Llama 3 Super Nova RP 8B (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Llama-3.2-1B-Instruct",
+   "name": "Llama-3 2-1B-Instruct (AI Horde)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Llama-3.2-3B",
+   "name": "Llama 3.2 3B (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Llama-3.2-3B-Instruct-Q4_K_M",
+   "name": "Llama-3 2-3B-Instruct-Q4 K M (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/MN-Violet-Lotus-12B.Q8_0",
+   "name": "MN-Violet-Lotus-12B Q8 0 (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Qwen/Qwen3.5-0.8B",
+   "name": "Qwen3.5 0.8B (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Qwen3-4B-Nymphaea-RP.i1-Q4_K_S",
+   "name": "Qwen3-4B-Nymphaea-RP i1-Q4 K S (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Qwen_Qwen3-0.6B-IQ4_XS",
+   "name": "Qwen3 0.6B IQ4 (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/ReadyArt/Forgotten-Safeword-22B",
+   "name": "Forgotten-Safeword-22B (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/Rocinante-X-12B",
+   "name": "Rocinante-X-12B (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/TheDrummer_Behemoth-128B-v3-Q4_K_M",
+   "name": "TheDrummer Behemoth-128B-v3-Q4 K M (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/[ctx:65536] Magidonia-24B-heretic-",
+   "name": "[ctx:65536] Magidonia-24B-heretic- (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/digo-prayudha/unsloth-llama-3.2-1b-gguf",
+   "name": "Llama 3.2 1B Unsloth (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/gemma-4-31B-it-heretic",
+   "name": "Gemma 4 31B Heretic (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 73,
+   "speed": 206,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/llama-3.2-3b-instruct-q4_k_m",
+   "name": "llama-3 2-3b-instruct-q4 k m (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/lunahr/thea-rp-3b-25r",
+   "name": "thea-rp-3b-25r (AI Horde)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 106,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/mini-magnum-12b-v1.1",
+   "name": "Mini Magnum 12B v1.1 (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 206,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/mradermacher/Cerebras-GPT-111M-instruction-GGUF",
+   "name": "Cerebras GPT 111M Instruct (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 202,
+   "speed": 206,
+   "size": "111M",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "koboldcpp/mradermacher/pythia-70m-deduped.f16.gguf",
+   "name": "Pythia 70M Deduped (AI Horde)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 203,
+   "speed": 206,
+   "size": "70M",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aihorde",
+   "id": "meta-llama/Llama-3.2-3B-Instruct",
+   "name": "Llama-3 2-3B-Instruct (AI Horde)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Kudos queue (no token cap)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aion",
+   "id": "aion-labs/aion-2.0",
+   "name": "Aion 2.0",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 15,
+    "rpd": null,
+    "tpm": 20000,
+    "tpd": 20000
+   },
+   "monthlyBudget": "free · 20k tok/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aion",
+   "id": "aion-labs/aion-3.0",
+   "name": "Aion 3.0",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 15,
+    "rpd": null,
+    "tpm": 20000,
+    "tpd": 20000
+   },
+   "monthlyBudget": "free · 20k tok/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 67,
+   "speed": 6,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aion",
+   "id": "aion-labs/aion-3.0-mini",
+   "name": "Aion 3.0 Mini",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 15,
+    "rpd": null,
+    "tpm": 20000,
+    "tpd": 20000
+   },
+   "monthlyBudget": "free · 20k tok/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 75,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "aion",
+   "id": "aion-labs/aion-rp-llama-3.1-8b",
+   "name": "Aion-RP Llama 3.1 8B",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 15,
+    "rpd": null,
+    "tpm": 20000,
+    "tpd": 20000
+   },
+   "monthlyBudget": "free · 20k tok/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 4,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "codestral-2508",
+   "name": "codestral-2508 (Api.Airforce)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "codestral-latest",
+   "name": "codestral-latest (Api.Airforce)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "gpt-oss-20b",
+   "name": "gpt-oss-20b (Api.Airforce)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "llama-instant",
+   "name": "llama-instant (Api.Airforce)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "ministral-14b-2512",
+   "name": "ministral-14b-2512 (Api.Airforce)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "ministral-14b-latest",
+   "name": "ministral-14b-latest (Api.Airforce)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "ministral-3b-2512",
+   "name": "ministral-3b-2512 (Api.Airforce)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "ministral-3b-latest",
+   "name": "ministral-3b-latest (Api.Airforce)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "ministral-8b-2512",
+   "name": "ministral-8b-2512 (Api.Airforce)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "ministral-8b-latest",
+   "name": "ministral-8b-latest (Api.Airforce)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "mistral-code-fim-latest",
+   "name": "mistral-code-fim-latest (Api.Airforce)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "mistral-code-latest",
+   "name": "mistral-code-latest (Api.Airforce)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "mistral-tiny-2407",
+   "name": "mistral-tiny-2407 (Api.Airforce)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "mistral-tiny-latest",
+   "name": "mistral-tiny-latest (Api.Airforce)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "open-mistral-nemo",
+   "name": "open-mistral-nemo (Api.Airforce)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "open-mistral-nemo-2407",
+   "name": "open-mistral-nemo-2407 (Api.Airforce)",
+   "contextWindow": 131000,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "rnj-1",
+   "name": "rnj-1 (Api.Airforce)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "unmoderated-gpt",
+   "name": "unmoderated-gpt (Api.Airforce)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "voxtral-small-2507",
+   "name": "voxtral-small-2507 (Api.Airforce)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "airforce",
+   "id": "voxtral-small-latest",
+   "name": "voxtral-small-latest (Api.Airforce)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 1,
+    "rpd": 1000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1,000 req/day · 1 req/min",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "bazaarlink",
+   "id": "auto:free",
+   "name": "BazaarLink Auto (free router)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 10,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · auto route",
+   "tools": true,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "bazaarlink",
+   "id": "deepseek/deepseek-v4-flash-0731free:free",
+   "name": "DeepSeek V4 Flash (BazaarLink free)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 10,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared rate limit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 38,
+   "speed": 6,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "bazaarlink",
+   "id": "qwen/qwen3.7-flash:free",
+   "name": "Qwen3.7 Flash (BazaarLink free)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 10,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared rate limit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "clod",
+   "id": "GPT OSS 120B",
+   "name": "GPT OSS 120B (CLōD)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": false,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "clod",
+   "id": "GPT OSS 20B",
+   "name": "GPT OSS 20B (CLōD)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": false,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "clod",
+   "id": "Gemma 4 31B IT",
+   "name": "Gemma 4 31B IT (CLōD)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": false,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "clod",
+   "id": "Qwen 3.5 9B",
+   "name": "Qwen 3.5 9B (CLōD)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": false,
+   "vision": false,
+   "intelligence": 79,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/aisingapore/gemma-sea-lion-v4-27b-it",
+   "name": "Gemma SEA-LION v4 27B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+   "name": "DeepSeek R1 Distill Qwen 32B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~3-5M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 90,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": 0.29,
+   "paidOutputPerM": 0.29
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/google/gemma-2b-it-lora",
+   "name": "Gemma 2B IT LoRA (CF)",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/google/gemma-4-26b-a4b-it",
+   "name": "Gemma 4 26B-A4B it (CF)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 73,
+   "speed": 11,
+   "size": "Large",
+   "paidInputPerM": 0.06,
+   "paidOutputPerM": 0.33
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/google/gemma-7b-it-lora",
+   "name": "Gemma 7B IT LoRA (CF)",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/ibm-granite/granite-4.0-h-micro",
+   "name": "Granite 4.0 H Micro (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~5-10M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": 0.017,
+   "paidOutputPerM": 0.112
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/llava-hf/llava-1.5-7b-hf",
+   "name": "LLaVA 1.5 7B (Cloudflare Workers AI)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared 10k neurons/day",
+   "tools": false,
+   "vision": true,
+   "intelligence": 105,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+   "name": "Llama 2 7B Chat LoRA (CF)",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta/llama-3.1-8b-instruct-fp8",
+   "name": "Llama 3.1 8B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta/llama-3.2-11b-vision-instruct",
+   "name": "Llama 3.2 11B Vision (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta/llama-3.2-1b-instruct",
+   "name": "Llama 3.2 1B Instruct (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta/llama-3.2-3b-instruct",
+   "name": "Llama 3.2 3B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+   "name": "Llama 3.3 70B fp8-fast (CF)",
+   "contextWindow": 24000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~18-45M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": 0.1,
+   "paidOutputPerM": 0.32
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta/llama-4-scout-17b-16e-instruct",
+   "name": "Llama 4 Scout (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~18-45M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": 0.08,
+   "paidOutputPerM": 0.3
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/meta/llama-guard-3-8b",
+   "name": "Llama Guard 3 8B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/mistral/mistral-7b-instruct-v0.2-lora",
+   "name": "Mistral 7B Instruct v0.2 LoRA (CF)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/mistralai/mistral-small-3.1-24b-instruct",
+   "name": "Mistral Small 3.1 24B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 93,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/moondream/moondream3.1-9B-A2B",
+   "name": "Moondream 3.1 9B A2B (CF)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": false,
+   "vision": true,
+   "intelligence": 103,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/nvidia/nemotron-3-120b-a12b",
+   "name": "Nemotron 3 120B (CF)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~5-10M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": 0.09,
+   "paidOutputPerM": 0.45
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/openai/gpt-oss-120b",
+   "name": "GPT-OSS 120B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~18-45M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": 0.039,
+   "paidOutputPerM": 0.18
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/openai/gpt-oss-20b",
+   "name": "GPT-OSS 20B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~18-45M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/qwen/qwen2.5-coder-32b-instruct",
+   "name": "Qwen2.5 Coder 32B (CF)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 94,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/qwen/qwen3-30b-a3b-fp8",
+   "name": "Qwen3 30B-A3B fp8 (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~18-45M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 92,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": 0.09,
+   "paidOutputPerM": 0.45
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/qwen/qwen3.8-27b",
+   "name": "Qwen 3.8 27B (Cloudflare Workers AI)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared 10k neurons/day",
+   "tools": true,
+   "vision": true,
+   "intelligence": 39,
+   "speed": 9,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/qwen/qwq-32b",
+   "name": "QwQ 32B (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 88,
+   "speed": 6,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cloudflare",
+   "id": "@cf/zai-org/glm-4.7-flash",
+   "name": "GLM-4.7 Flash (CF)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~18-45M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 11,
+   "size": "Large",
+   "paidInputPerM": 0.06,
+   "paidOutputPerM": 0.4
+  },
+  {
+   "platform": "cohere",
+   "id": "c4ai-aya-expanse-32b",
+   "name": "Aya Expanse 32B",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "c4ai-aya-vision-32b",
+   "name": "Aya Vision 32B",
+   "contextWindow": 16384,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": false,
+   "vision": true,
+   "intelligence": 103,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "command-a-03-2025",
+   "name": "Command-A (03-2025)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": 2.5,
+   "paidOutputPerM": 10.0
+  },
+  {
+   "platform": "cohere",
+   "id": "command-a-plus-05-2026",
+   "name": "Command A+ (05-2026)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 81,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "command-a-reasoning-08-2025",
+   "name": "Command A Reasoning (08-2025)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": 2.5,
+   "paidOutputPerM": 10.0
+  },
+  {
+   "platform": "cohere",
+   "id": "command-a-translate-08-2025",
+   "name": "Command A Translate (08-2025)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "command-a-vision-07-2025",
+   "name": "Command A Vision (07-2025)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": false,
+   "vision": true,
+   "intelligence": 93,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "command-r-08-2024",
+   "name": "Command R (08-2024)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": 0.15,
+   "paidOutputPerM": 0.6
+  },
+  {
+   "platform": "cohere",
+   "id": "command-r-plus-08-2024",
+   "name": "Command R+ (08-2024)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 11,
+   "size": "Small",
+   "paidInputPerM": 2.5,
+   "paidOutputPerM": 10.0
+  },
+  {
+   "platform": "cohere",
+   "id": "command-r7b-12-2024",
+   "name": "Command R7B (12-2024)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "command-r7b-arabic-02-2025",
+   "name": "Command R7B Arabic (02-2025)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "1,000 calls/month · evaluation only",
+   "tools": true,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "north-mini-code-1-0",
+   "name": "North Mini Code",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 87,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "north-small-translate-09-2026",
+   "name": "North Small Translate (Cohere)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~1-2M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "tiny-aya-earth",
+   "name": "Tiny Aya Earth",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "1K calls/mo shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "tiny-aya-fire",
+   "name": "Tiny Aya Fire",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "1K calls/mo shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "tiny-aya-global",
+   "name": "Tiny Aya Global",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "1K calls/mo shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "cohere",
+   "id": "tiny-aya-water",
+   "name": "Tiny Aya Water",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": 20,
+    "rpd": 33,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "1K calls/mo shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "auto",
+   "name": "Auto route (DreamPrompting)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "chat/ch.at",
+   "name": "ch.at (DreamPrompting)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "codestral/codestral-latest",
+   "name": "Codestral (DreamPrompting)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "groq/groq/compound-mini",
+   "name": "Groq Compound Mini (DreamPrompting)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 2,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "groq/openai/gpt-oss-120b",
+   "name": "GPT-OSS 120B (via Groq) (DreamPrompting)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "groq/openai/gpt-oss-20b",
+   "name": "GPT-OSS 20B (via Groq) (DreamPrompting)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "nvidia-vision/meta/llama-3.2-11b-vision-instruct",
+   "name": "Llama 3.2 11B Vision (DreamPrompting)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "nvidia/nvidia/nemotron-3-super-120b-a12b",
+   "name": "Nemotron 3 Super 120B (via NVIDIA) (DreamPrompting)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "dreamprompting",
+   "id": "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
+   "name": "Nemotron 3 Super 120B (via OpenRouter) (DreamPrompting)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 100,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": 500000
+   },
+   "monthlyBudget": "free · 500K tokens/day · 5,000 req/day",
+   "tools": false,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "codestral-2508",
+   "name": "Codestral 2508 (ElectronHub)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "command-r-08-2024",
+   "name": "Command R (08-2024) (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "deepseek-r1-distill-qwen-32b",
+   "name": "R1 Distill Qwen 32B (ElectronHub)",
+   "contextWindow": 131000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 90,
+   "speed": 11,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "deepseek-v4-flash",
+   "name": "DeepSeek V4 Flash (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 59,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "deepseek-v4-flash-thinking",
+   "name": "DeepSeek V4 Flash Thinking (ElectronHub)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 59,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemini-2.5-flash",
+   "name": "Gemini 2.5 Flash (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 81,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemini-2.5-flash-lite",
+   "name": "Gemini 2.5 Flash-Lite (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 89,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemini-3.5-flash-lite",
+   "name": "Gemini 3.5 Flash Lite (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 63,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemma-2-9b-it",
+   "name": "Gemma 2 9B (ElectronHub)",
+   "contextWindow": 8000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemma-3-12b-it",
+   "name": "gemma 3 12b it (ElectronHub)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 4,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemma-3-1b-it",
+   "name": "Gemma 3 1B (ElectronHub)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemma-3-4b-it",
+   "name": "gemma 3 4b it (ElectronHub)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 4,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemma-4-26b-a4b-it",
+   "name": "Gemma 4 26B A4B (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 73,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gemma-4-31b-it",
+   "name": "Gemma 4 31B (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 69,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "glm-4.7-flash",
+   "name": "GLM 4.7 Flash (ElectronHub)",
+   "contextWindow": 200000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 11,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-4.1",
+   "name": "GPT 4.1 (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 81,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-4.1-mini",
+   "name": "GPT 4.1 Mini (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 87,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-4.1-nano",
+   "name": "GPT 4.1 Nano (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 91,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-4o",
+   "name": "GPT 4o (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 91,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-4o-mini",
+   "name": "GPT 4o Mini (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 93,
+   "speed": 5,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-5-mini",
+   "name": "GPT 5 Mini (ElectronHub)",
+   "contextWindow": 400000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 73,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-5-nano",
+   "name": "GPT 5 Nano (ElectronHub)",
+   "contextWindow": 400000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 81,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-5.4-mini",
+   "name": "GPT 5.4 Mini (ElectronHub)",
+   "contextWindow": 400000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 59,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-5.4-nano",
+   "name": "GPT 5.4 Nano (ElectronHub)",
+   "contextWindow": 400000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 65,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-5.6-luna",
+   "name": "GPT-5.6 Luna (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 33,
+   "speed": 10,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "gpt-oss-120b",
+   "name": "GPT OSS 120B (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "hermes-4-14b",
+   "name": "Hermes 4 14B (ElectronHub)",
+   "contextWindow": 40000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "hunyuan-a13b-instruct",
+   "name": "Hunyuan A13B Instruct (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "laguna-s-2.1",
+   "name": "Laguna S 2.1 (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "laguna-xs-2.1",
+   "name": "Laguna XS 2.1 (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "ling-3.0-flash-sante",
+   "name": "Ling 3.0 Flash Sante (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 65,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "llama-3.2-1b",
+   "name": "Llama 3.2 1B (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "llama-3.2-3b",
+   "name": "Llama 3.2 3B (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "llama-4-maverick-17b-128e-instruct",
+   "name": "Llama 4 Maverick (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 87,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "llama-4-scout-17b-16e-instruct",
+   "name": "Llama 4 Scout (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 91,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "longcat-flash-chat",
+   "name": "LongCat Flash Chat (ElectronHub)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 85,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "mimo-v2.5",
+   "name": "MIMO V2.5 (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 57,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "minimax-m2.5",
+   "name": "MiniMax M2.5 (ElectronHub)",
+   "contextWindow": 200000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 8,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "minimax-m2.7",
+   "name": "MiniMax M2.7 (ElectronHub)",
+   "contextWindow": 200000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "minimax-m3",
+   "name": "MiniMax M3 (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 48,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "ministral-14b-2512",
+   "name": "Ministral 14B (2512) (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "ministral-3b-2512",
+   "name": "Ministral 3B (2512) (ElectronHub)",
+   "contextWindow": 131000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "ministral-8b-2512",
+   "name": "Ministral 8B (2512) (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "nemotron-3-nano-omni-30b-a3b-reasoning",
+   "name": "Nemotron 3 Nano Omni  (ElectronHub)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 89,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "nemotron-3-super-120b-a12b",
+   "name": "Nemotron 3 Super (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "nemotron-3-ultra-550b-a55b",
+   "name": "Nemotron 3 Ultra (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "nemotron-3.5-lightning",
+   "name": "Nemotron 3.5 Lightning (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "open-mistral-nemo-2407",
+   "name": "Open Mistral Nemo 2407 (ElectronHub)",
+   "contextWindow": 131000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "phi-4",
+   "name": "phi 4 (ElectronHub)",
+   "contextWindow": 16000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen-2.5-32b-instruct",
+   "name": "Qwen2.5 32B Instruct (ElectronHub)",
+   "contextWindow": 131000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen-2.5-72b-instruct",
+   "name": "Qwen2.5 72B Instruct (ElectronHub)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 92,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen-2.5-7b-instruct",
+   "name": "Qwen2.5 7B Instruct (ElectronHub)",
+   "contextWindow": 131000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen-2.5-coder-32b-instruct",
+   "name": "Qwen2.5 Coder 32B Instruct (ElectronHub)",
+   "contextWindow": 33000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 94,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen-2.5-coder-7b-instruct",
+   "name": "Qwen2.5 Coder 7B Instruct (ElectronHub)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen3-30b-a3b-instruct-2507",
+   "name": "Qwen3 30B A3B Instruct 2507 (ElectronHub)",
+   "contextWindow": 131000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 92,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen3-coder-30-a3b-instruct",
+   "name": "Qwen3 Coder 30B A3B Instruct (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 88,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen3.7-flash",
+   "name": "Qwen3.7 Flash (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 69,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen3.8-27b",
+   "name": "Qwen3.8 27B (ElectronHub)",
+   "contextWindow": 262000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 39,
+   "speed": 10,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "qwen3.8-flash",
+   "name": "Qwen3.8 Flash (ElectronHub)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 27,
+   "speed": 10,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "step-3.5-flash",
+   "name": "Step 3.5 Flash (ElectronHub)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 73,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "step-3.7-flash",
+   "name": "Step 3.7 Flash (ElectronHub)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": true,
+   "intelligence": 68,
+   "speed": 3,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "electronhub",
+   "id": "wizardlm-2-8x22b",
+   "name": "WizardLM-2 8x22B (ElectronHub)",
+   "contextWindow": 64000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "$0.25/week shared recurring credit",
+   "tools": true,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-2.5-flash",
+   "name": "Gemini 2.5 Flash",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 81,
+   "speed": 5,
+   "size": "Medium",
+   "paidInputPerM": 0.3,
+   "paidOutputPerM": 2.5
+  },
+  {
+   "platform": "google",
+   "id": "gemini-2.5-flash-lite",
+   "name": "Gemini 2.5 Flash-Lite",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 15,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 89,
+   "speed": 3,
+   "size": "Medium",
+   "paidInputPerM": 0.1,
+   "paidOutputPerM": 0.4
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3-flash-preview",
+   "name": "Gemini 3 Flash Preview",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 71,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": 0.5,
+   "paidOutputPerM": 3.0
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3.1-flash-lite",
+   "name": "Gemini 3.1 Flash-Lite",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 15,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 75,
+   "speed": 3,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3.1-flash-lite-preview",
+   "name": "Gemini 3.1 Flash Lite Preview (Google AI Studio)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 75,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": 0.25,
+   "paidOutputPerM": 1.5
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3.5-flash",
+   "name": "Gemini 3.5 Flash",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 41,
+   "speed": 5,
+   "size": "Frontier",
+   "paidInputPerM": 1.5,
+   "paidOutputPerM": 9.0
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3.5-flash-lite",
+   "name": "Gemini 3.5 Flash Lite",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 15,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 63,
+   "speed": 3,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3.6-flash",
+   "name": "Gemini 3.6 Flash",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 39,
+   "speed": 5,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3.7-flash",
+   "name": "Gemini 3.7 Flash",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 29,
+   "speed": 4,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-3.8-flash",
+   "name": "Gemini 3.8 Flash",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free tier · recurring provider quota",
+   "tools": true,
+   "vision": true,
+   "intelligence": 25,
+   "speed": 4,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-flash-latest",
+   "name": "Gemini Flash (latest alias) (Google AI Studio)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 25,
+   "speed": 10,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-flash-lite-latest",
+   "name": "Gemini Flash Lite (latest alias) (Google AI Studio)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 63,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemini-robotics-er-2-preview",
+   "name": "Gemini Robotics-ER 2 Preview",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 10,
+    "rpd": 20,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~3M",
+   "tools": false,
+   "vision": true,
+   "intelligence": 57,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "google",
+   "id": "gemma-4-26b-a4b-it",
+   "name": "Gemma 4 26B IT",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 15,
+    "rpd": 1000,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~30M",
+   "tools": false,
+   "vision": true,
+   "intelligence": 73,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": 0.06,
+   "paidOutputPerM": 0.33
+  },
+  {
+   "platform": "google",
+   "id": "gemma-4-31b-it",
+   "name": "Gemma 4 31B IT",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 15,
+    "rpd": 1000,
+    "tpm": 250000,
+    "tpd": null
+   },
+   "monthlyBudget": "~30M",
+   "tools": false,
+   "vision": true,
+   "intelligence": 69,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": 0.12,
+   "paidOutputPerM": 0.37
+  },
+  {
+   "platform": "groq",
+   "id": "allam-2-7b",
+   "name": "ALLaM 2 7B (Groq)",
+   "contextWindow": 4096,
+   "limits": {
+    "rpm": 30,
+    "rpd": 1000,
+    "tpm": 6000,
+    "tpd": 500000
+   },
+   "monthlyBudget": "~15M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 2,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "groq",
+   "id": "meta-llama/llama-prompt-guard-2-22m",
+   "name": "Llama Prompt Guard 2 22M (Groq)",
+   "contextWindow": 512,
+   "limits": {
+    "rpm": 30,
+    "rpd": 14400,
+    "tpm": 15000,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 14.4K rpd",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 1,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "groq",
+   "id": "meta-llama/llama-prompt-guard-2-86m",
+   "name": "Llama Prompt Guard 2 86M (Groq)",
+   "contextWindow": 512,
+   "limits": {
+    "rpm": 30,
+    "rpd": 14400,
+    "tpm": 15000,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 14.4K rpd",
+   "tools": false,
+   "vision": false,
+   "intelligence": 105,
+   "speed": 1,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "groq",
+   "id": "openai/gpt-oss-120b",
+   "name": "GPT-OSS 120B (Groq)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 30,
+    "rpd": 1000,
+    "tpm": 8000,
+    "tpd": 200000
+   },
+   "monthlyBudget": "~6M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": 0.039,
+   "paidOutputPerM": 0.18
+  },
+  {
+   "platform": "groq",
+   "id": "openai/gpt-oss-20b",
+   "name": "GPT-OSS 20B (Groq)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 30,
+    "rpd": 1000,
+    "tpm": 8000,
+    "tpd": 200000
+   },
+   "monthlyBudget": "~6M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": 0.029,
+   "paidOutputPerM": 0.14
+  },
+  {
+   "platform": "groq",
+   "id": "openai/gpt-oss-safeguard-20b",
+   "name": "GPT-OSS Safeguard 20B (Groq)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 30,
+    "rpd": 1000,
+    "tpm": 8000,
+    "tpd": 200000
+   },
+   "monthlyBudget": "~6M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": 0.075,
+   "paidOutputPerM": 0.3
+  },
+  {
+   "platform": "groq",
+   "id": "qwen/qwen3.8-27b",
+   "name": "Qwen3.8 27B (Groq)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 30,
+    "rpd": 250,
+    "tpm": 70000,
+    "tpd": null
+   },
+   "monthlyBudget": "~6M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 39,
+   "speed": 2,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "cohere/north-mini-code:free",
+   "name": "North Mini Code (Kilo)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 87,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "dots-studio/dots-3-note-preview:free",
+   "name": "Dots3 Note Preview (Kilo)",
+   "contextWindow": 512000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": true,
+   "intelligence": 35,
+   "speed": 7,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "kilo-auto/free",
+   "name": "Kilo Auto Free",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 79,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "liquid/lfm-2.5-2.6b:free",
+   "name": "LFM2.5 2.6B (Kilo)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 90,
+   "speed": 3,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+   "name": "Nemotron 3 Nano Omni Reasoning (Kilo)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP (trial)",
+   "tools": false,
+   "vision": true,
+   "intelligence": 89,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "nvidia/nemotron-3-super-120b-a12b:free",
+   "name": "Nemotron 3 Super 120B (Kilo)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~2-3M (200/hr)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": 0.09,
+   "paidOutputPerM": 0.45
+  },
+  {
+   "platform": "kilo",
+   "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+   "name": "Nemotron 3 Ultra 550B (Kilo)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP (trial)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "nvidia/nemotron-3.5-content-safety:free",
+   "name": "Nemotron 3.5 Content Safety (Kilo)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP (trial)",
+   "tools": false,
+   "vision": true,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "nvidia/nemotron-3.5-lightning:free",
+   "name": "Nemotron 3.5 Lightning (Kilo)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "openrouter/free",
+   "name": "Free Router (Kilo)",
+   "contextWindow": 200000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": true,
+   "intelligence": 81,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "poolside/laguna-s-2.1:free",
+   "name": "Poolside Laguna S 2.1 (Kilo)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 8,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "poolside/laguna-xs-2.1:free",
+   "name": "Poolside Laguna XS 2.1 (Kilo)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200/hr per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "kilo",
+   "id": "thinkingmachines/inkling-small:free",
+   "name": "Inkling Small (Kilo)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": 5000,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 5,000 req/day shared per route · 200/hr per IP (trial)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 55,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "llm7",
+   "id": "codestral-latest",
+   "name": "Codestral (LLM7)",
+   "contextWindow": 32000,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Free tier: 100,000 tokens/24h shared",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": 0.3,
+   "paidOutputPerM": 0.9
+  },
+  {
+   "platform": "llm7",
+   "id": "default",
+   "name": "Default (LLM7)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Free tier: 100,000 tokens/24h shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 87,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "llm7",
+   "id": "mistral-Nemo-Instruct-2407",
+   "name": "Mistral Nemo Instruct 2407 (LLM7)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Free tier: 100,000 tokens/24h shared",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "logfare",
+   "id": "gemma-4-26b",
+   "name": "Gemma 4 26B (Logfare)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · fair use · traffic logged",
+   "tools": false,
+   "vision": false,
+   "intelligence": 73,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "logfare",
+   "id": "logfare/auto",
+   "name": "Logfare Auto (Logfare)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · fair use · traffic logged",
+   "tools": false,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "codestral-2508",
+   "name": "Codestral 2508",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "codestral-latest",
+   "name": "Codestral",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "~50-100M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": 0.3,
+   "paidOutputPerM": 0.9
+  },
+  {
+   "platform": "mistral",
+   "id": "ministral-14b-2512",
+   "name": "Ministral 14B (2512)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": true,
+   "vision": true,
+   "intelligence": 95,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "ministral-14b-latest",
+   "name": "Ministral 14B",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "~50-100M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "ministral-3b-2512",
+   "name": "Ministral 3B (2512)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": true,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "ministral-3b-latest",
+   "name": "Ministral 3B",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": true,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "ministral-8b-2512",
+   "name": "Ministral 8B (2512)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": true,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "ministral-8b-latest",
+   "name": "Ministral 3 8B",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "~50-100M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": 0.15,
+   "paidOutputPerM": 0.15
+  },
+  {
+   "platform": "mistral",
+   "id": "mistral-code-fim-latest",
+   "name": "Mistral Code FIM",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": false,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "mistral-code-latest",
+   "name": "Mistral Code",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "~50-100M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "voxtral-small-2507",
+   "name": "Voxtral Small 2507",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": true,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "mistral",
+   "id": "voxtral-small-latest",
+   "name": "Voxtral Small",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": 500000,
+    "tpd": null
+   },
+   "monthlyBudget": "Free plan · $10/month shared API credits",
+   "tools": true,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "MiniMax/MiniMax-M3",
+   "name": "MiniMax M3 (ModelScope)",
+   "contextWindow": 196608,
+   "limits": {
+    "rpm": null,
+    "rpd": 100,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 48,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+   "name": "Qwen3 235B A22B Instruct 2507 (ModelScope)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+   "name": "Qwen3 235B A22B Thinking 2507 (ModelScope)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 82,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+   "name": "Qwen3 Coder 30B A3B Instruct (ModelScope)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 88,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+   "name": "Qwen3 Next 80B A3B Instruct (ModelScope)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 88,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+   "name": "Qwen3 Next 80B A3B Thinking (ModelScope)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 85,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "Qwen/Qwen3-VL-235B-A22B-Instruct",
+   "name": "Qwen3 VL 235B A22B Instruct (ModelScope)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": true,
+   "intelligence": 87,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "Qwen/Qwen3.5-397B-A17B",
+   "name": "Qwen3.5 397B A17B (ModelScope)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 100,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 71,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "ZhipuAI/GLM-4.7-Flash",
+   "name": "GLM-4.7 Flash (ModelScope)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 7,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "ZhipuAI/GLM-5.2",
+   "name": "GLM-5.2 (ModelScope)",
+   "contextWindow": 200000,
+   "limits": {
+    "rpm": null,
+    "rpd": 100,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 39,
+   "speed": 8,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "modelscope",
+   "id": "deepseek-ai/DeepSeek-V4-Pro",
+   "name": "DeepSeek V4 Pro (ModelScope)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": 100,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "Daily login: 200 credits + 50 for linked Alibaba Cloud; 24h expiry; shared; noncommercial experience",
+   "tools": false,
+   "vision": false,
+   "intelligence": 46,
+   "speed": 9,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nara",
+   "id": "agnes-2.5-flash",
+   "name": "Agnes 2.5 Flash (NaraRouter)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 10,
+    "rpd": null,
+    "tpm": null,
+    "tpd": 7000000
+   },
+   "monthlyBudget": "free · 7M/day shared",
+   "tools": true,
+   "vision": true,
+   "intelligence": 63,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nara",
+   "id": "laguna-s-2.1",
+   "name": "Laguna S 2.1 (NaraRouter free)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 10,
+    "rpd": null,
+    "tpm": null,
+    "tpd": 7000000
+   },
+   "monthlyBudget": "free · 7M/day shared",
+   "tools": true,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 7,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "google/diffusiongemma-26b-a4b-it",
+   "name": "DiffusionGemma 26B A4B IT (NV)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": true,
+   "intelligence": 88,
+   "speed": 6,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "meta/llama-3.2-11b-vision-instruct",
+   "name": "Llama 3.2 11B Vision Instruct (NVIDIA NIM)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 8,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "meta/llama-3.2-90b-vision-instruct",
+   "name": "Llama 3.2 90B Vision (NV)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": true,
+   "intelligence": 95,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "meta/muse-glimmer-30b",
+   "name": "Muse Glimmer 30B (NV)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": true,
+   "intelligence": 67,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/ising-calibration-1.5-31b",
+   "name": "Ising Calibration 1.5 31B (NV)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": true,
+   "intelligence": 91,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/llama-3.1-nemoguard-8b-content-safety",
+   "name": "Llama 3.1 NemoGuard 8B Content Safety (NVIDIA NIM)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/llama-3.1-nemoguard-8b-topic-control",
+   "name": "Llama 3.1 NemoGuard 8B Topic Control (NVIDIA NIM)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/llama-3.1-nemotron-safety-guard-8b-v3",
+   "name": "Llama 3.1 Nemotron Safety Guard 8B v3 (NVIDIA NIM)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+   "name": "Nemotron 3 Nano Omni 30B A3B Reasoning (NVIDIA NIM)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": true,
+   "intelligence": 89,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "Nemotron 3 Super 120B (NV)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": 0.09,
+   "paidOutputPerM": 0.45
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/nemotron-3-ultra-550b-a55b",
+   "name": "Nemotron-3 Ultra 550B (NV)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 8,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/nemotron-3.5-content-safety",
+   "name": "Nemotron 3.5 Content Safety (NV)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+   "name": "Nemotron 3.5 Lightning 30B A3B (NV)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 4,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/nemotron-parse-2.0",
+   "name": "Nemotron Parse 2.0 (NVIDIA NIM)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": true,
+   "intelligence": 103,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "nvidia/riva-translate-4b-instruct-v2",
+   "name": "Riva Translate 4B Instruct v2 (NVIDIA NIM)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 101,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "openai/gpt-oss-20b",
+   "name": "GPT-OSS 20B (NV)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 6,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "nvidia",
+   "id": "poolside/laguna-xs-2.1",
+   "name": "Poolside Laguna XS 2.1 (NV)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 40,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 40 RPM",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 8,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ollama",
+   "id": "gemma4:31b",
+   "name": "Gemma 4 31B (Ollama)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~20-30M",
+   "tools": false,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": 0.12,
+   "paidOutputPerM": 0.37
+  },
+  {
+   "platform": "ollama",
+   "id": "gpt-oss:120b",
+   "name": "GPT-OSS 120B (Ollama)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~10-20M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": 0.039,
+   "paidOutputPerM": 0.18
+  },
+  {
+   "platform": "ollama",
+   "id": "gpt-oss:20b",
+   "name": "GPT-OSS 20B (Ollama)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~20-30M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": 0.029,
+   "paidOutputPerM": 0.14
+  },
+  {
+   "platform": "ollama",
+   "id": "nemotron-3-nano:30b",
+   "name": "Nemotron 3 Nano 30B (Ollama)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~5-10M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ollama",
+   "id": "nemotron-3-super",
+   "name": "Nemotron-3 Super (Ollama)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~5-10M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ollama",
+   "id": "nemotron-3-ultra",
+   "name": "Nemotron 3 Ultra (Ollama)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~5-10M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "openrouter",
+   "id": "cohere/north-mini-code:free",
+   "name": "North Mini Code (free)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~6M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 87,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "openrouter",
+   "id": "dots-studio/dots-3-note-preview:free",
+   "name": "Dots3 Note Preview (free)",
+   "contextWindow": 512000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 35,
+   "speed": 7,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "openrouter",
+   "id": "google/gemma-4-26b-a4b-it:free",
+   "name": "Gemma 4 26B-A4B (free)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 73,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": 0.06,
+   "paidOutputPerM": 0.33
+  },
+  {
+   "platform": "openrouter",
+   "id": "google/gemma-4-31b-it:free",
+   "name": "Gemma 4 31B (free)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": 0.12,
+   "paidOutputPerM": 0.37
+  },
+  {
+   "platform": "openrouter",
+   "id": "liquid/lfm-2.5-2.6b:free",
+   "name": "LFM2.5 2.6B (free)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 90,
+   "speed": 3,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "openrouter",
+   "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+   "name": "Nemotron 3 Nano 30B Reasoning (free)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": 0.05,
+   "paidOutputPerM": 0.2
+  },
+  {
+   "platform": "openrouter",
+   "id": "nvidia/nemotron-3-super-120b-a12b:free",
+   "name": "Nemotron 3 Super 120B (free)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": 0.09,
+   "paidOutputPerM": 0.45
+  },
+  {
+   "platform": "openrouter",
+   "id": "nvidia/nemotron-3.5-content-safety:free",
+   "name": "Nemotron 3.5 Content Safety (free)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "openrouter",
+   "id": "nvidia/nemotron-3.5-lightning:free",
+   "name": "Nemotron 3.5 Lightning (free)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "openrouter",
+   "id": "poolside/laguna-s-2.1:free",
+   "name": "Poolside Laguna S 2.1 (free)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "openrouter",
+   "id": "poolside/laguna-xs-2.1:free",
+   "name": "Poolside Laguna XS 2.1 (free)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 20,
+    "rpd": 50,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 50 req/day account-wide (1,000 after a $10 purchase)",
+   "tools": false,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Meta-Llama-3_3-70B-Instruct",
+   "name": "Llama 3.3 70B (OVH)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Mistral-Nemo-Instruct-2407",
+   "name": "Mistral Nemo (OVH)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Mistral-Small-3.2-24B-Instruct-2506",
+   "name": "Mistral Small 3.2 24B (OVH)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Qwen2.5-VL-72B-Instruct",
+   "name": "Qwen2.5 VL 72B (OVH)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": false,
+   "vision": true,
+   "intelligence": 92,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Qwen3.5-397B-A17B",
+   "name": "Qwen3.5 397B (OVH)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 71,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Qwen3.5-9B",
+   "name": "Qwen3.5 9B (OVH)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 79,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Qwen3.6-27B",
+   "name": "Qwen3.6 27B (OVH)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 65,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Qwen3.8-27B",
+   "name": "Qwen3.8 27B (OVH)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 39,
+   "speed": 9,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Qwen3Guard-Gen-0.6B",
+   "name": "Qwen3Guard Gen 0.6B (OVH safety)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "Qwen3Guard-Gen-8B",
+   "name": "Qwen3Guard Gen 8B (OVH safety)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "gpt-oss-120b",
+   "name": "GPT-OSS 120B (OVH)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "ovh",
+   "id": "gpt-oss-20b",
+   "name": "GPT-OSS 20B (OVH)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 2,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 2/min per IP",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "radeon",
+   "id": "DeepSeek-V4-Flash",
+   "name": "DeepSeek V4 Flash (AMD Radeon Cloud)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · recurring daily account allowance",
+   "tools": true,
+   "vision": false,
+   "intelligence": 59,
+   "speed": 6,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "radeon",
+   "id": "Qwen3.8-Flash-Next",
+   "name": "Qwen3.8 Flash Next (AMD Radeon Cloud)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · recurring daily account allowance",
+   "tools": true,
+   "vision": false,
+   "intelligence": 27,
+   "speed": 5,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "google/gemma-4-31b-it",
+   "name": "Gemma 4 31B (Requesty)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": true,
+   "vision": true,
+   "intelligence": 69,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "mistral/leanstral-1-5",
+   "name": "Leanstral 1.5 (Requesty)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "nvidia/muse-glimmer-30b",
+   "name": "Muse Glimmer 30B (Requesty)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": false,
+   "vision": false,
+   "intelligence": 73,
+   "speed": 8,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+   "name": "Nemotron 3 Nano Omni Reasoning (Requesty)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": false,
+   "vision": true,
+   "intelligence": 89,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "nvidia/nemotron-3-super-120b-a12b",
+   "name": "Nemotron 3 Super 120B (Requesty)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "nvidia/nemotron-3-ultra-550b-a55b",
+   "name": "Nemotron 3 Ultra 550B (Requesty)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "nvidia/nemotron-3.5-content-safety",
+   "name": "Nemotron 3.5 Content Safety (Requesty)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": false,
+   "vision": true,
+   "intelligence": 103,
+   "speed": 9,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "requesty",
+   "id": "nvidia/nemotron-3.5-lightning-30b-a3b",
+   "name": "Nemotron 3.5 Lightning 30B (Requesty)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 200 rpd",
+   "tools": true,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 3,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "router9",
+   "id": "deepseek/deepseek-v4-flash",
+   "name": "DeepSeek V4 Flash 0731 (Router9)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "20,000 credits/month (~$2) shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 38,
+   "speed": 9,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "router9",
+   "id": "deepseek/deepseek-v4-pro",
+   "name": "DeepSeek V4 Pro (Router9)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "20,000 credits/month (~$2) shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 46,
+   "speed": 9,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "router9",
+   "id": "minimax/minimax-m3",
+   "name": "MiniMax M3 (Router9)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "20,000 credits/month (~$2) shared",
+   "tools": false,
+   "vision": true,
+   "intelligence": 48,
+   "speed": 7,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "router9",
+   "id": "qwen/qwen3-235b-a22b-2507",
+   "name": "Qwen3 235B A22B Instruct 2507 (Router9)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "20,000 credits/month (~$2) shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "router9",
+   "id": "z-ai/glm-5.2",
+   "name": "GLM 5.2 (Router9)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "20,000 credits/month (~$2) shared",
+   "tools": false,
+   "vision": false,
+   "intelligence": 39,
+   "speed": 8,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "routeway",
+   "id": "deepseek-v4-flash:free",
+   "name": "DeepSeek V4 Flash (Routeway)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 5,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · zero-priced route",
+   "tools": false,
+   "vision": false,
+   "intelligence": 59,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "routeway",
+   "id": "minimax-m2.7:free",
+   "name": "MiniMax M2.7 (Routeway)",
+   "contextWindow": 204800,
+   "limits": {
+    "rpm": 5,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · zero-priced route",
+   "tools": false,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 5,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "routeway",
+   "id": "muse-glimmer-30b:free",
+   "name": "Muse Glimmer 30B (Routeway free)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 5,
+    "rpd": 200,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · zero-priced route",
+   "tools": true,
+   "vision": true,
+   "intelligence": 67,
+   "speed": 7,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "sealion",
+   "id": "aisingapore/Gemma-SEA-LION-v4-27B-IT",
+   "name": "Gemma SEA-LION v4 27B (SEA-LION)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 10,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 10 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "sealion",
+   "id": "aisingapore/Llama-SEA-LION-v3-70B-IT",
+   "name": "Llama SEA-LION v3 70B (SEA-LION)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": 10,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 10 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "sealion",
+   "id": "aisingapore/Qwen-SEA-LION-v4-32B-IT",
+   "name": "Qwen SEA-LION v4 32B (SEA-LION)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 10,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 10 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 92,
+   "speed": 7,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "sealion",
+   "id": "aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
+   "name": "Qwen SEA-LION v4.5 27B (SEA-LION)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": 10,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 10 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 7,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "sealion",
+   "id": "aisingapore/SEA-Guard",
+   "name": "SEA-Guard (SEA-LION)",
+   "contextWindow": 8192,
+   "limits": {
+    "rpm": 10,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 10 RPM",
+   "tools": false,
+   "vision": false,
+   "intelligence": 200,
+   "speed": 6,
+   "size": "Safety",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "septor",
+   "id": "gemma-4-31b-it-free",
+   "name": "Gemma 4 31B IT (Septor Labs)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": false,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "septor",
+   "id": "hermes-3-llama-3.1-405b-free",
+   "name": "Hermes 3 Llama 3.1 405B (Septor Labs)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": true,
+   "vision": false,
+   "intelligence": 93,
+   "speed": 10,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "septor",
+   "id": "minimax-m2.5-free",
+   "name": "MiniMax M2.5 (Septor Labs)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": true,
+   "vision": false,
+   "intelligence": 61,
+   "speed": 8,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "septor",
+   "id": "qwen3-coder-free",
+   "name": "Qwen3 Coder (Septor Labs)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": true,
+   "vision": false,
+   "intelligence": 83,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "septor",
+   "id": "qwen3-next-80b-a3b-instruct-free",
+   "name": "Qwen3 Next 80B A3B Instruct (Septor Labs)",
+   "contextWindow": 128000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · shared daily allowance",
+   "tools": true,
+   "vision": false,
+   "intelligence": 88,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "unorouter",
+   "id": "glm-5.3-flash:free",
+   "name": "GLM 5.3 Flash (UnoRouter free)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": 1,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1 req/min per model",
+   "tools": true,
+   "vision": true,
+   "intelligence": 23,
+   "speed": 9,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "unorouter",
+   "id": "glm-5.3:free",
+   "name": "GLM 5.3 (UnoRouter free)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": 1,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1 req/min per model",
+   "tools": true,
+   "vision": false,
+   "intelligence": 17,
+   "speed": 7,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "laguna-s-2.1-free",
+   "name": "laguna-s-2.1 (Waterfall)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "lfm-2.5-2.6b-free",
+   "name": "lfm-2.5-2.6b (Waterfall)",
+   "contextWindow": 32768,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 90,
+   "speed": 3,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "ling-3.0-flash-sante-free",
+   "name": "ling-3.0-flash-sante (Waterfall)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 65,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "ling-3.0-flash-vl-free",
+   "name": "ling-3.0-flash-vl (Waterfall)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "nemotron-3-nano-omni-30b-a3b-reasoning-free",
+   "name": "nemotron-3-nano-omni-30b-a3b-reasoning (Waterfall)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "nemotron-3-super-120b-a12b-free",
+   "name": "nemotron-3-super-120b-a12b (Waterfall)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "nemotron-3-super-120b-free",
+   "name": "nemotron-3-super-120b (Waterfall)",
+   "contextWindow": null,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 10,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "nemotron-3.5-lightning-free",
+   "name": "nemotron-3.5-lightning (Waterfall)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 81,
+   "speed": 2,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "nex-n2.5-mini-free",
+   "name": "nex-n2.5-mini (Waterfall)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 63,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "waterfall",
+   "id": "nex-n2.5-pro-free",
+   "name": "nex-n2.5-pro (Waterfall)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · community rate limit",
+   "tools": false,
+   "vision": false,
+   "intelligence": 49,
+   "speed": 10,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/codestral-2508",
+   "name": "Codestral (xKiro)",
+   "contextWindow": 256000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 99,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/devstral-medium",
+   "name": "Devstral 2 (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 89,
+   "speed": 7,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/ministral-14b",
+   "name": "Ministral 3 14B (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 95,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/ministral-3b",
+   "name": "Ministral 3 3B (xKiro)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 4,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/ministral-8b",
+   "name": "Ministral 3 8B (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 97,
+   "speed": 5,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/mistral-large-2512",
+   "name": "Mistral Large 3 (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 89,
+   "speed": 8,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/mistral-medium-3.5",
+   "name": "Mistral Medium 3.5 (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 79,
+   "speed": 6,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "mistralai/mistral-small-2603",
+   "name": "Mistral Small 4 (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 85,
+   "speed": 6,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen-plus-2025-07-28:free",
+   "name": "Qwen Plus 2025-07-28 (xKiro)",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 87,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3-coder-plus:free",
+   "name": "Qwen3 Coder Plus (xKiro)",
+   "contextWindow": 1048576,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 85,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3-max:free",
+   "name": "Qwen3 Max (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 76,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3-omni-flash:free",
+   "name": "Qwen3 Omni Flash (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 91,
+   "speed": 6,
+   "size": "Small",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3-vl-plus:free",
+   "name": "Qwen3 VL Plus (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 87,
+   "speed": 9,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.5-397b-a17b:free",
+   "name": "Qwen3.5 397B A17B (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 71,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.5-flash:free",
+   "name": "Qwen3.5 Flash (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 6,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.5-omni-flash:free",
+   "name": "Qwen3.5 Omni Flash (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 83,
+   "speed": 6,
+   "size": "Medium",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.5-omni-plus:free",
+   "name": "Qwen3.5 Omni Plus (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 67,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.5-plus:free",
+   "name": "Qwen3.5 Plus (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.6-27b:free",
+   "name": "Qwen3.6 27B (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 65,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.6-35b-a3b:free",
+   "name": "Qwen3.6 35B A3B (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 71,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.6-max-preview:free",
+   "name": "Qwen3.6 Max Preview (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 50,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.6-plus:free",
+   "name": "Qwen3.6 Plus (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 53,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.7-flash:free",
+   "name": "Qwen3.7 Flash (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 69,
+   "speed": 6,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.7-max:free",
+   "name": "Qwen3.7 Max (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 49,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.7-plus:free",
+   "name": "Qwen3.7 Plus (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 57,
+   "speed": 9,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.8-max:free",
+   "name": "Qwen3.8 Max (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": false,
+   "intelligence": 17,
+   "speed": 9,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "qwen/qwen3.8-omni-flash:free",
+   "name": "Qwen3.8 Omni Flash (xKiro)",
+   "contextWindow": 1000000,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 1M tokens/day (permanently doubled)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 31,
+   "speed": 6,
+   "size": "Frontier",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "xkiro",
+   "id": "sensenova/sensenova-6.8-flash-lite",
+   "name": "SenseNova 6.8 Flash-Lite (xKiro)",
+   "contextWindow": 262144,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "free · 500K tokens/day (1M with Telegram)",
+   "tools": true,
+   "vision": true,
+   "intelligence": 65,
+   "speed": 6,
+   "size": "Large",
+   "paidInputPerM": null,
+   "paidOutputPerM": null
+  },
+  {
+   "platform": "zhipu",
+   "id": "glm-4.5-flash",
+   "name": "GLM-4.5 Flash",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": 1000000
+   },
+   "monthlyBudget": "~30M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 91,
+   "speed": 4,
+   "size": "Medium",
+   "paidInputPerM": 0.06,
+   "paidOutputPerM": 0.4
+  },
+  {
+   "platform": "zhipu",
+   "id": "glm-4.6v-flash",
+   "name": "GLM-4.6V Flash",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": null
+   },
+   "monthlyBudget": "~30M",
+   "tools": true,
+   "vision": true,
+   "intelligence": 97,
+   "speed": 4,
+   "size": "Small",
+   "paidInputPerM": 0.3,
+   "paidOutputPerM": 0.9
+  },
+  {
+   "platform": "zhipu",
+   "id": "glm-4.7-flash",
+   "name": "GLM-4.7 Flash",
+   "contextWindow": 131072,
+   "limits": {
+    "rpm": null,
+    "rpd": null,
+    "tpm": null,
+    "tpd": 1000000
+   },
+   "monthlyBudget": "~30M",
+   "tools": true,
+   "vision": false,
+   "intelligence": 77,
+   "speed": 4,
+   "size": "Large",
+   "paidInputPerM": 0.06,
+   "paidOutputPerM": 0.4
+  }
+ ]
+}
