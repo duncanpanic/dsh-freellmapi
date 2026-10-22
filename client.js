@@ -513,6 +513,22 @@ window.__ModuleLoader__.load({
         }
       }, [])
 
+      const load = useCallback(async () => {
+        try {
+          setData(await callApi('/native/status'))
+        } catch (failure) {
+          setData({ enabled: false, error: failure?.message ?? String(failure) })
+        }
+      }, [])
+
+      const loadChannels = useCallback(async () => {
+        try {
+          setChannelData(await callApi('/channels'))
+        } catch (failure) {
+          setChannelData({ state: 'failed', reason: failure?.message ?? String(failure) })
+        }
+      }, [])
+
       const saveCatalogMode = useCallback(async (mode, secrets = {}) => {
         setCatalogModeLoading(true)
         try {
@@ -531,23 +547,6 @@ window.__ModuleLoader__.load({
       }, [load])
 
       useEffect(() => { void loadCatalogMode() }, [loadCatalogMode])
-
-      const load = useCallback(async () => {
-        try {
-          setData(await callApi('/native/status'))
-        } catch (failure) {
-          setData({ enabled: false, error: failure?.message ?? String(failure) })
-        }
-      }, [])
-
-      const loadChannels = useCallback(async () => {
-        try {
-          setChannelData(await callApi('/channels'))
-        } catch (failure) {
-          setChannelData({ state: 'failed', reason: failure?.message ?? String(failure) })
-        }
-      }, [])
-
       useEffect(() => { void load() }, [load])
       useEffect(() => { void loadChannels() }, [loadChannels])
 

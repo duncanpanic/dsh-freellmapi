@@ -419,10 +419,12 @@ const panelCases = [
 ]
 
 // NativePanel's hooks, in order:
-//   [data, platform, secret, busy, note, tab, query, toolsOnly, showAll, probeResult, probing]
+//   [data, platform, secret, busy, note, tab, query, toolsOnly, showAll, probeResult, probing,
+//    channelData, catalogMode, catalogModeLoading, catalogModeError]
 // `data` is seeded per case; `tab` picks which view is under test.
 const seed = (data, tab = 'overview', probeResult = null) => [
   data, '', '', false, '', tab, '', false, false, probeResult, false,
+  null, '', true, '', '',
 ]
 
 for (const [label, data, expected] of panelCases) {
