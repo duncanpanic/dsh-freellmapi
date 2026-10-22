@@ -244,6 +244,36 @@ dsh-freellmapi/
 └── cordis.patch.yml         # 默认配置
 ```
 
+## 目录来源模式（CatalogSource）
+
+插件支持 **6 种模型目录来源**，可在设置面板「密钥」页签顶部的下拉菜单中切换：
+
+| 模式 | 显示名称 | 目录来源 | 快照来源 | 更新频率 | 认证 |
+|------|----------|---------|---------|---------|------|
+| `dsh-free` | **dsh-freellmapi 免费版**（默认） | 本地 `src/native/catalog.json` | dsh 快照 free | 每月 | 无 |
+| `dsh-star` | **dsh-freellmapi Star 版** | 本地 `src/native/catalog.json` | dsh 快照 star | 每周 | 无 |
+| `dsh-sponsor` | **dsh-freellmapi 赞助版** | 本地 `src/native/catalog.json` | dsh 快照 vip | 每日 | 赞助密钥 |
+| `official-free` | **FreeLLMAPI 免费版（官方）** | `https://freellmapi.co/catalog.json` | 无 | 实时 | 无 |
+| `official-premium` | **FreeLLMAPI 订阅版（官方）** | `https://freellmapi.co/signed-catalog` | 无 | 实时 | `fla_` 密钥 |
+| `custom` | **自定义** | 用户指定文件/URL | 用户指定文件/URL | 自定义 | 无 |
+
+### 说明
+
+- **本地目录模式**（`dsh-free`/`dsh-star`/`dsh-sponsor`）：使用随插件分发的 `catalog.json`（368 模型 · 60 平台），离线可用。快照由私有仓库 `freellmapi-snapshot` 定期生成并发布到 `snapshot.lorcan.top`。当前 `star` 与 `vip` 快照为**计划中**状态，`free` 快照每月更新一次。
+- **官方免费版**（`official-free`）：直接拉取 FreeLLMAPI 官方公开目录，无需任何 Key，适合离线或不想依赖本地快照的场景。
+- **官方订阅版**（`official-premium`）：拉取带 **Ed25519 签名** 的实时目录（`signed-catalog`），需在设置面板输入 `fla_` 开头的订阅密钥。签名由插件端自动验证，确保目录未被篡改。该模式提供完整的 `pricing.prompt/completion` 价格字段，适合需要实时价格信息的场景。
+- **自定义模式**（`custom`）：允许指定任意本地文件或远程 URL 作为目录/快照来源，适合自建镜像或私有部署。
+
+### 切换方式
+
+1. 打开 **设置 → 插件 → FreeLLMAPI → 密钥** 页签
+2. 在顶部「目录来源」下拉菜单选择目标模式
+3. 若选择 `official-premium` 或 `dsh-sponsor`，弹窗会提示输入对应密钥
+4. 选择 `custom` 时会依次提示目录 URL 和快照 URL（可选）
+5. 保存后插件自动重新加载目录并刷新模型列表
+
+---
+
 ## Roadmap
 
 - [x] 进程内路由、配额、故障转移、地区探测、combo 链、账号渠道
@@ -287,6 +317,7 @@ What it does, in order of usefulness:
   the upstream artifact embeds OAuth client credentials. Without it the plugin works
   normally; only the channels tab reports that it is unavailable.
 - **Settings panel** with 7 tabs: overview, models, keys, chains, tools, health, channels.
+- **Catalog sources**: 6 selectable modes — `dsh-free` (default, bundled catalog + monthly snapshot), `dsh-star`/`dsh-sponsor` (weekly/daily snapshots, planned), `official-free` (FreeLLMAPI public catalog), `official-premium` (signed real-time catalog, Ed25519 verified, requires `fla_` key), and `custom` (user-specified file/URL).
 
 Nothing runs outside the DSH process: no gateway, no extra port, no Docker. Keys are
 sealed with AES-256-GCM under `~/.dsh/freellmapi` and sent straight to the upstream
