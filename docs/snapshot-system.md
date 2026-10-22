@@ -31,13 +31,44 @@ freellmapi-snapshot/
 └── snapshots/              # 生成结果（snapshot-*.json + latest.json）
 ```
 
+## CatalogSource 架构（新）
+
+`snapshot-fetcher.js` 现实现了 **CatalogSource** 接口，支持 **6 种目录来源模式**：
+
+| 模式 ID | 显示名称 | 目录来源 | 快照来源 | 缓存 TTL | 认证需求 |
+|--------|----------|---------|---------|---------|---------|
+| `official-free` | FreeLLMAPI 免费版 | 官方 catalog.json | 无 | 24 小时 | 否 |
+| `official-premium` | FreeLLMAPI 订阅版 | 官方 signed-catalog (Ed25519) | 无 | 3 天 | 是 (fla_ key) |
+| `dsh-free` | dsh-freellmapi 免费版 | 本地 catalog.json | free 快照 | 5 分钟 | 否 |
+| `dsh-star` | dsh-freellmapi Star 版 | 本地 catalog.json | star 快照 | 3 分钟 | 否 |
+| `dsh-sponsor` | dsh-freellmapi 赞助版 | 本地 catalog.json | vip 快照 | 1 分钟 | 可选 |
+| `custom` | 自定义 | 用户指定文件/URL | 用户指定文件/URL | 5 分钟 | 否 |
+
+默认模式：`dsh-free`（兼容现有行为）。
+
+### 使用示例
+
+```javascript
+import { createCatalogSource, fetchWithSource } from './snapshot-fetcher.js'
+
+// 根据设置自动创建对应的 Source
+const source = createCatalogSource(settings)
+// settings.catalogMode = 'dsh-free' | 'dsh-star' | 'dsh-sponsor' | 'official-free' | 'official-premium' | 'custom'
+
+const { catalog, snapshot } = await fetchWithSource(source, { force: false })
+// catalog: { platforms: {...}, models: [...] }
+// snapshot: { providers: {...}, summary: {...} } | null
+```
+
 ## 运行流程
 
 1. 私有仓库定时运行 `generate-snapshot.mjs`（免费模式每月，Star 模式每周，订阅每日）
 2. 脚本向 NVIDIA / OpenRouter 拉取模型列表并筛选免费模型
 3. 生成 `snapshot-<prefix>-<date>.json`，上传到 `snapshot.lorcan.top`
 4. 同时刷新 `latest.json` 指针
-5. 插件启动后调用 `fetchSnapshot()`，先读 `latest.json`，再按指针取具体版本
+5. 插件启动后：
+   - 旧 API：调用 `fetchSnapshot()`，先读 `latest.json`，再按指针取具体版本
+   - 新 API：调用 `createCatalogSource(settings)` 获取 Source，再用 `fetchWithSource(source)` 拉取目录+快照
 6. 结果进程内缓存：免费 5 分钟，Star 模式 3 分钟，订阅 1 分钟
 
 ## 接口约定
@@ -79,6 +110,8 @@ Sensetime `api.sensenova.cn/v1/models` 返回 404，已从供应商列表移除�
 
 ## 插件端用法
 
+### 旧 API（向后兼容）
+
 ```javascript
 import { fetchSnapshot, onUpdate, isStarMode } from './snapshot-fetcher.js'
 
@@ -90,9 +123,20 @@ if (isStarMode()) {
 }
 ```
 
+### 新 API（推荐）
+
+```javascript
+import { createCatalogSource, fetchWithSource, onUpdate } from './snapshot-fetcher.js'
+
+const source = createCatalogSource(settings)
+const { catalog, snapshot } = await fetchWithSource(source)
+
+console.log('目录:', catalog.platforms, catalog.models.length)
+console.log('快照:', snapshot?.summary)
+```
+
 ## 待办事项
 
 - [ ] 实现上传到 snapshot.lorcan.top 的逻辑
-- [ ] 实现付费订阅验证 API
+- [ ] 在设置面板添加 CatalogSource 选择器
 - [ ] 添加订阅态持久化
-- [ ] 完善 UI 提示

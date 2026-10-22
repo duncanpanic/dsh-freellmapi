@@ -5,7 +5,7 @@
 # dsh-freellmapi
 
 **在 DeepSeek Harness 进程内直接调度各家的免费模型。**
-297 个模型 · 32 个平台 · 按配额选路 · 自动故障转移 · 无外部网关
+368 个模型 · 60 个平台 · 按配额选路 · 自动故障转移 · 无外部网关
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%5E22.19%20%7C%7C%20%3E%3D24-brightgreen.svg)](#环境要求)
@@ -34,7 +34,7 @@ flowchart LR
   S[DSH 会话] --> A[freellmapi-native<br/>配额 · 冷却 · 地区 · 失败分类]
   A -->|key 在本地解密后直发| P1[NVIDIA NIM]
   A --> P2[OpenRouter]
-  A --> P3[… 共 32 个平台]
+  A --> P3[… 共 60 个平台]
   A -.->|可选| C[13 个登录型账号渠道]
 ```
 
@@ -42,7 +42,7 @@ flowchart LR
 
 | 能力 | 说明 |
 |---|---|
-| **模型目录** | 内置 `src/native/catalog.json`：297 个模型 ID、342 条可用路由、32 个可拨号平台、194 条支持工具调用。目录随包发布，选模型不需要联网 |
+| **模型目录** | 内置 `src/native/catalog.json`：368 个模型 ID、368 条可用路由、60 个可拨号平台、206 条支持工具调用。目录随包发布，选模型不需要联网 |
 | **配额感知选路** | 按平台的配额类型（credits / 每模型限额）记账，key 进入冷却后跳过，冷却结束自动恢复，无需手动干预 |
 | **自动故障转移** | 失败按语义分类处理：401/403 换 key、429 冷却后换平台、5xx 重试、400 直接停（不会把时间浪费在注定失败的模型上） |
 | **地区探测** | 主动向已配置平台发一个最小请求，标记**从本机不可达**的模型/平台组合，之后路由直接跳过它们，而不是每次真实请求去撞墙 |
@@ -225,7 +225,7 @@ dsh-freellmapi/
 ├── client.js                # Web 半：设置面板（7 个页签）
 ├── src/
 │   ├── native/
-│   │   ├── catalog.json     # 离线目录（368 行 / 297 个模型 ID / 32 个可拨平台）
+│   │   ├── catalog.json     # 离线目录（368 行 / 368 个模型 ID / 60 个可拨平台 / 206 条工具路由）
 │   │   ├── catalog.js       # 目录读取与排序
 │   │   ├── router.js        # 选路
 │   │   ├── quota.js         # 配额与冷却
@@ -272,7 +272,7 @@ keys into one dependable provider route named `freellmapi-native`.
 
 What it does, in order of usefulness:
 
-- **297 models across 32 platforms** from a bundled catalog — the picker works offline.
+- **368 models across 60 platforms** from a bundled catalog — the picker works offline.
 - **Quota-aware routing and cooldowns** — a rate-limited key is parked and revived, not deleted.
 - **Automatic failover** with semantic error handling: 401/403 rotates the key, 429
   rotates the platform, 5xx retries, 400 stops immediately instead of burning the pool.

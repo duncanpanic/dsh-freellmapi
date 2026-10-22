@@ -47,6 +47,22 @@ window.__ModuleLoader__.load({
         nativeFailed: '保存失败',
         nativeRemove: '移除',
         nativeKeyless: '免密钥',
+        catalogTitle: '目录来源',
+        catalogSub: '选择模型目录和快照的来源。本地免费版使用内置目录 + 每月快照；官方订阅版使用签名的实时目录。',
+        catalogModeFree: 'dsh 免费版',
+        catalogModeStar: 'dsh Star 版',
+        catalogModeSponsor: 'dsh 赞助版',
+        catalogModeOfficialFree: 'FreeLLMAPI 免费版（官方）',
+        catalogModeOfficialPremium: 'FreeLLMAPI 订阅版（官方）',
+        catalogModeCustom: '自定义',
+        catalogSelect: '目录来源',
+        catalogSaved: '目录来源已保存',
+        catalogSaveFailed: '保存目录来源失败',
+        catalogFlaKey: '输入 fla_ 密钥',
+        catalogSponsorKey: '输入赞助密钥',
+        catalogCustomCatalog: '目录文件或 URL',
+        catalogCustomSnapshot: '快照文件或 URL (可选)',
+        catalogSaving: '保存中…',
         nativeNoKeys: '还没有配置任何平台。选一个平台填 key 即可；标注「免密钥」的平台可以直接加。',
         nativeToday: '今日',
         nativeCooling: '冷却中',
@@ -187,6 +203,22 @@ window.__ModuleLoader__.load({
         nativeFailed: 'Save failed',
         nativeRemove: 'Remove',
         nativeKeyless: 'keyless',
+        catalogTitle: 'Catalog source',
+        catalogSub: 'Choose where the model catalog and snapshot come from. The local free tier uses the built-in catalog + monthly snapshot; the official premium tier uses a signed real-time catalog.',
+        catalogModeFree: 'dsh free tier',
+        catalogModeStar: 'dsh Star tier',
+        catalogModeSponsor: 'dsh sponsor tier',
+        catalogModeOfficialFree: 'FreeLLMAPI free tier (official)',
+        catalogModeOfficialPremium: 'FreeLLMAPI premium (official)',
+        catalogModeCustom: 'custom',
+        catalogSelect: 'Catalog source',
+        catalogSaved: 'catalog source saved',
+        catalogSaveFailed: 'failed to save catalog source',
+        catalogFlaKey: 'fla_ key',
+        catalogSponsorKey: 'sponsor key',
+        catalogCustomCatalog: 'catalog file or URL',
+        catalogCustomSnapshot: 'snapshot file or URL (optional)',
+        catalogSaving: 'saving…',
         nativeNoKeys: 'No platform configured yet. Pick one and paste a key; platforms marked "keyless" can be added directly.',
         nativeToday: 'today',
         nativeCooling: 'cooling',
@@ -464,6 +496,41 @@ window.__ModuleLoader__.load({
       const [probeResult, setProbeResult] = useState(null)
       const [probing, setProbing] = useState(false)
       const [channelData, setChannelData] = useState(null)
+      const [catalogMode, setCatalogMode] = useState('')
+      const [catalogModeLoading, setCatalogModeLoading] = useState(true)
+      const [catalogModeError, setCatalogModeError] = useState('')
+
+      const loadCatalogMode = useCallback(async () => {
+        setCatalogModeLoading(true)
+        try {
+          const result = await callApi('/native/catalog-mode')
+          setCatalogMode(result.mode || 'dsh-free')
+          setCatalogModeError('')
+        } catch (failure) {
+          setCatalogModeError(failure?.message ?? String(failure))
+        } finally {
+          setCatalogModeLoading(false)
+        }
+      }, [])
+
+      const saveCatalogMode = useCallback(async (mode, secrets = {}) => {
+        setCatalogModeLoading(true)
+        try {
+          await callApi('/native/catalog-mode', {
+            method: 'POST',
+            body: JSON.stringify({ mode, secrets }),
+          })
+          setCatalogMode(mode)
+          setCatalogModeError('')
+          await load()
+        } catch (failure) {
+          setCatalogModeError(failure?.message ?? String(failure))
+        } finally {
+          setCatalogModeLoading(false)
+        }
+      }, [load])
+
+      useEffect(() => { void loadCatalogMode() }, [loadCatalogMode])
 
       const load = useCallback(async () => {
         try {
@@ -739,6 +806,52 @@ window.__ModuleLoader__.load({
           )
 
       const keysTab = h(Fragment, null,
+        // Catalog source selector
+        h('div', { className: 'dsh-flm-subhead' }, t('catalogTitle')),
+        h('div', { className: 'dsh-flm-subnote' }, t('catalogSub')),
+        h('div', { className: 'dsh-flm-row' },
+          h('select', {
+            className: 'dsh-flm-select',
+            style: { flex: '1 1 200px' },
+            value: catalogMode,
+            disabled: catalogModeLoading,
+            onChange: async (event) => {
+              const mode = event.target.value
+              if (mode === 'official-premium') {
+                const key = prompt(t('catalogFlaKey'))
+                if (!key || !key.trim()) return
+                await saveCatalogMode(mode, { officialPremium: key.trim() })
+              } else if (mode === 'dsh-sponsor') {
+                const key = prompt(t('catalogSponsorKey'))
+                if (!key || !key.trim()) return
+                await saveCatalogMode(mode, { dshSponsor: key.trim() })
+              } else if (mode === 'custom') {
+                const catalogSrc = prompt(t('catalogCustomCatalog'))
+                if (!catalogSrc || !catalogSrc.trim()) return
+                const snapshotSrc = prompt(t('catalogCustomSnapshot'))
+                await saveCatalogMode(mode, {
+                  catalogSource: catalogSrc.trim(),
+                  snapshotSource: snapshotSrc?.trim() || '',
+                })
+              } else {
+                await saveCatalogMode(mode)
+              }
+            },
+          }, [
+            h('option', { key: 'dsh-free', value: 'dsh-free' }, t('catalogModeFree')),
+            h('option', { key: 'dsh-star', value: 'dsh-star' }, t('catalogModeStar')),
+            h('option', { key: 'dsh-sponsor', value: 'dsh-sponsor' }, t('catalogModeSponsor')),
+            h('option', { key: 'official-free', value: 'official-free' }, t('catalogModeOfficialFree')),
+            h('option', { key: 'official-premium', value: 'official-premium' }, t('catalogModeOfficialPremium')),
+            h('option', { key: 'custom', value: 'custom' }, t('catalogModeCustom')),
+          ]),
+          catalogModeLoading
+            ? h('span', { className: 'dsh-flm-keymeta' }, t('catalogSaving'))
+            : null,
+        ),
+        catalogModeError
+          ? h('div', { className: 'dsh-flm-note err' }, catalogModeError)
+          : null,
         groups.length === 0
           ? h('div', { className: 'dsh-flm-empty' }, t('nativeNoKeys'))
           : groups.map(group => h(Fragment, { key: group.platform }, (group.entries ?? []).map(entry => keyRow(group, entry)))),

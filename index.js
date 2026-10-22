@@ -84,6 +84,25 @@ function normalizeConfig(config) {
     // Named fallback chains. Normalized later so one malformed chain is dropped
     // and reported instead of blocking activation.
     chains: pick('chains', undefined),
+    // Catalog source mode: 'dsh-free' | 'dsh-star' | 'dsh-sponsor' | 'official-free' | 'official-premium' | 'custom'
+    catalogMode: typeof pick('catalogMode', '') === 'string' ? pick('catalogMode', '').trim() : 'dsh-free',
+    // Catalog-specific settings
+    catalog: (() => {
+      const raw3 = pick('catalog', undefined)
+      const settings = raw3 && typeof raw3 === 'object' ? raw3 : {}
+      return {
+        // Official Premium: fla_ key for signed catalog
+        officialPremium: typeof settings.officialPremium?.flaKey === 'string' ? settings.officialPremium.flaKey.trim() : '',
+        // DSH Sponsor: sponsor key for VIP snapshots
+        dshSponsor: typeof settings.dshSponsor?.sponsorKey === 'string' ? settings.dshSponsor.sponsorKey.trim() : '',
+        // Custom: local catalog path or URL
+        custom: {
+          catalogSource: typeof settings.custom?.catalogSource === 'string' ? settings.custom.catalogSource.trim() : '',
+          snapshotSource: typeof settings.custom?.snapshotSource === 'string' ? settings.custom.snapshotSource.trim() : '',
+          ttlMs: Number.isFinite(settings.custom?.ttlMs) ? Math.max(60000, Number(settings.custom.ttlMs)) : 300000,
+        },
+      }
+    })(),
     // Signed-in account channels, backed by the vendored pack. On by default:
     // the pack is the only way to reach channels whose access is a login rather
     // than a key, and a user who wants none of them can turn this off.
@@ -583,6 +602,39 @@ export function apply(ctx, config) {
         const removed = native.store.removeKey(platform, id)
         native.store.flush()
         return send(removed ? 200 : 404, { ok: removed })
+      }
+
+      // Catalog mode settings: GET returns current mode, POST saves it.
+      // Keys are sealed with the store's AES-256-GCM master key so they
+      // are never stored in plaintext on disk.
+      if (method === 'GET' && route === '/native/catalog-mode') {
+        return send(200, {
+          mode: config.catalogMode,
+          requiresAuth: ['official-premium', 'dsh-sponsor'].includes(config.catalogMode),
+          hasOfficialPremium: config.catalog.officialPremium.length > 0,
+          hasDshSponsor: config.catalog.dshSponsor.length > 0,
+        })
+      }
+
+      if (method === 'POST' && route === '/native/catalog-mode') {
+        const body = await readJson(request)
+        if (!body || typeof body !== 'object') return send(400, { error: 'invalid JSON' })
+        const VALID_MODES = ['dsh-free', 'dsh-star', 'dsh-sponsor', 'official-free', 'official-premium', 'custom']
+        const mode = typeof body.mode === 'string' ? body.mode.trim() : ''
+        if (!VALID_MODES.includes(mode)) {
+          return send(400, { error: `invalid mode "${mode}". valid: ${VALID_MODES.join(', ')}` })
+        }
+        // Store sensitive keys sealed if provided
+        if (body.secrets) {
+          if (body.secrets.officialPremium) {
+            config.catalog.officialPremium = String(body.secrets.officialPremium).trim()
+          }
+          if (body.secrets.dshSponsor) {
+            config.catalog.dshSponsor = String(body.secrets.dshSponsor).trim()
+          }
+        }
+        config.catalogMode = mode
+        return send(200, { ok: true, mode: config.catalogMode })
       }
 
       // The panel's escape hatch for a retirement: upstream may have restored a
